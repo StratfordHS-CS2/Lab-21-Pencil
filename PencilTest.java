@@ -88,13 +88,21 @@ public class PencilTest
         Pencil p = new Pencil("yellow", 25, true, true);
         String out = p.toString().toLowerCase();
         if( out.indexOf("yellow") < 0 )
+        {
             fail("toString failed. Does not output the color. (-14 points)");
+        }
         if( out.indexOf("25") < 0 )
+        {
             fail("toString failed. Does not output the length. (-14 points)");
+        }
         if( out.indexOf("eraser") < 0 )
+        {
             fail("toString failed. Does not output the eraser status. (-14 points)");
+        }
         if( out.indexOf("sharp") < 0 )
+        {
             fail("toString failed. Does not output the sharp status. (-14 points)");
+        }
     }
 
     /**
