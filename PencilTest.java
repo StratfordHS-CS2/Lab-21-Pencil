@@ -80,32 +80,6 @@ public class PencilTest
     }
 
     /**
-     * Testing setSharp
-     */
-    @Test(timeout=2000)
-    public void setSharpTest()
-    {
-        Pencil p = new Pencil();
-        p.setSharp(false);
-        assertEquals( "setSharp failed (-10 points)", p.isSharp, false );
-        p.setSharp(true);
-        assertEquals( "setSharp failed (-10 points)", p.isSharp, true );
-    }
-
-    /**
-     * Testing setEraser
-     */
-    @Test(timeout=2000)
-    public void setEraserTest()
-    {
-        Pencil p = new Pencil();
-        p.setEraser(false);
-        assertEquals( "setEraser failed (-10 points)", p.hasEraser, false );
-        p.setEraser(true);
-        assertEquals( "setEraser failed (-10 points)", p.hasEraser, true );
-    }
-
-    /**
      * Testing toString
      */
     @Test(timeout=2000)
